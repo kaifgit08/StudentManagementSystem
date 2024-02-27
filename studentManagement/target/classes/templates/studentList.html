@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+</head>
+<body>
+    <h2>Student List</h2>
+
+    <!-- Search Bar -->
+    <!--<form action="/students/search" method="get">
+        <label for="keyword">Search:</label>
+        <input type="text" id="keyword" name="keyword" />
+        <button type="submit">Search</button>
+    </form>-->
+
+    <!-- Student Table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Role Number</th>
+                <th>Name</th>
+                <th>English</th>
+                <th>Tamil</th>
+                <th>Maths</th>
+                <th>Social</th>
+                <th>Science</th>
+                <th>Total Marks</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterate over the list of students -->
+            <tr th:each="student : ${students}">
+                <td th:text="${student.roleNumber}"></td>
+                <td th:text="${student.name}"></td>
+                <td th:text="${student.english}"></td>
+                <td th:text="${student.tamil}"></td>
+                <td th:text="${student.maths}"></td>
+                <td th:text="${student.social}"></td>
+                <td th:text="${student.science}"></td>
+                <td th:text="${student.totalMarks}"></td>
+                <td th:text="${student.result}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
