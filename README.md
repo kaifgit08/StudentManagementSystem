@@ -1,2 +1,2 @@
 # StudentManagementSystem
-We can do crud operation ,Adding Student marks, name, subject etc. Created Using SpringBoot  
+We can do crud operation ,Adding Student marks, name, subject etc. Created Using SpringBoot and for the database part used Mysql. 
